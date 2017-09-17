@@ -1,0 +1,339 @@
+---------------------------------------------------------------
+[ 2017-09-16T12:06:13+08:00 ] ::1 ::1 GET /dx/public/
+[ info ] localhost/dx/public/ [运行时间：1.177339s][吞吐率：0.85req/s] [内存消耗：2,435.32kb] [文件加载：36]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ G:\php\wamp64\www\dx\application\index\controller\IndexController.php ]
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-16T12:06:14+08:00 ] ::1 ::1 GET /dx/public/index/user/login.html
+[ info ] localhost/dx/public/index/user/login.html [运行时间：0.323802s][吞吐率：3.09req/s] [内存消耗：2,765.63kb] [文件加载：37]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->login[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-16T12:06:16+08:00 ] ::1 ::1 GET /dx/public/index/user/oauthlogin/type/qq.html
+[ info ] localhost/dx/public/index/user/oauthlogin/type/qq.html [运行时间：0.027885s][吞吐率：35.86req/s] [内存消耗：2,430.16kb] [文件加载：34]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'oauthlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'qq',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->oauthLogin[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-16T12:06:24+08:00 ] ::1 ::1 GET /dx/public/index/user/callback/type/qq?code=47FC9999FF3E976D6D489826CCB98627
+[ info ] localhost/dx/public/index/user/callback/type/qq?code=47FC9999FF3E976D6D489826CCB98627 [运行时间：1.535645s][吞吐率：0.65req/s] [内存消耗：4,611.89kb] [文件加载：49]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'callback',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+  'code' => '47FC9999FF3E976D6D489826CCB98627',
+  'type' => 'qq',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->callback[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001474s ] mysql:dbname=dxstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_basic` [ RunTime:0.001391s ]
+[ sql ] [ SQL ] SELECT * FROM `user_basic` WHERE  `openid` = '70E39FDCDF4900FDECDF1267706B4B5F' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] UPDATE `user_basic`  SET `login_count`=login_count+1  WHERE  `id` = 1 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[ 2017-09-16T12:06:26+08:00 ] ::1 ::1 GET /dx/public/index/user/index.html
+[ info ] localhost/dx/public/index/user/index.html [运行时间：0.260972s][吞吐率：3.83req/s] [内存消耗：4,779.16kb] [文件加载：47]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/index/user/callback/type/qq?code=47FC9999FF3E976D6D489826CCB98627',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->index[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\public/../application/index\view\user\index.html [ array (
+  0 => 'user_info',
+  1 => 'head',
+  2 => 'user_resume',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001124s ] mysql:dbname=dxstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_basic` [ RunTime:0.002859s ]
+[ sql ] [ SQL ] SELECT * FROM `user_basic` WHERE  `openid` = '70E39FDCDF4900FDECDF1267706B4B5F' LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_resume` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_resume` WHERE  `schoolid` = '201506021019' LIMIT 1 [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2017-09-16T12:10:38+08:00 ] ::1 ::1 GET /dx/public/index/user/.html
+[ info ] localhost/dx/public/index/user/.html [运行时间：0.153705s][吞吐率：6.51req/s] [内存消耗：4,778.82kb] [文件加载：47]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/index/user/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->index[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\public/../application/index\view\user\index.html [ array (
+  0 => 'user_info',
+  1 => 'head',
+  2 => 'user_resume',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001276s ] mysql:dbname=dxstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_basic` [ RunTime:0.008063s ]
+[ sql ] [ SQL ] SELECT * FROM `user_basic` WHERE  `openid` = '70E39FDCDF4900FDECDF1267706B4B5F' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_resume` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `user_resume` WHERE  `schoolid` = '201506021019' LIMIT 1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2017-09-16T12:12:14+08:00 ] ::1 ::1 GET /dx/public/index/user/logout.html
+[ info ] localhost/dx/public/index/user/logout.html [运行时间：0.082113s][吞吐率：12.18req/s] [内存消耗：4,419.20kb] [文件加载：45]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/index/user/.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->logout[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001600s ] mysql:dbname=dxstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_basic` [ RunTime:0.001711s ]
+[ sql ] [ SQL ] UPDATE `user_basic`  SET `login_time`='1505535134'  WHERE  `openid` = '70E39FDCDF4900FDECDF1267706B4B5F' [ RunTime:0.000677s ]
+---------------------------------------------------------------
+[ 2017-09-16T12:12:15+08:00 ] ::1 ::1 GET /dx/public/index/user/login.html
+[ info ] localhost/dx/public/index/user/login.html [运行时间：0.124180s][吞吐率：8.05req/s] [内存消耗：2,765.75kb] [文件加载：37]
+[ info ] [ LANG ] G:\php\wamp64\www\dx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/dx/public/index/user/logout.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4',
+  'cookie' => '_ga=GA1.1.693594347.1505469756; _gid=GA1.1.837174393.1505469756; PHPSESSID=qhvo8ubf5de14956b4rv4p21u4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\UserController->login[ G:\php\wamp64\www\dx\application\index\controller\UserController.php ]
+[ info ] [ VIEW ] G:\php\wamp64\www\dx\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

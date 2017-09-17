@@ -1,0 +1,316 @@
+{include file="index/header"/}
+<link href="__STATIC__/mui/css/mui.picker.css" rel="stylesheet" />
+<link href="__STATIC__/mui/css/mui.poppicker.css" rel="stylesheet" />
+<script src="__STATIC__/mui/js/mui.picker.js"></script>
+<script src="__STATIC__/mui/js/mui.poppicker.js"></script>
+<style type="text/css">
+	.help_info {
+				/*margin-top: 5px;*/
+				text-align: center;
+				left: 0px;
+			}
+	.resume_operation{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		left: 0px;
+		margin: 0 auto;
+	}
+	.mui-popover {
+	height:300px;
+	width: 200px;
+	font-size: 8px;
+	
+}
+.mui-control-content {
+				
+				min-height: 215px;
+			}
+.mui-popover p{
+	font-size: 10px;
+}
+.mui-input-group label {
+				width: 32%;
+}
+#position{
+	width: 48%;
+}
+#send{
+	width: 20%;
+}
+</style>
+	<!--主界面部分-->
+	<div class="mui-inner-wrap">
+		<header class="mui-bar mui-bar-nav">
+			<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+			<h1 class="mui-title">我的简历</h1>
+			<a class="mui-icon mui-icon-upload mui-pull-right" href="{:url('user/logout')}"></a>
+		</header>
+		
+		<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll ">
+				<!-- 主页内容 -->
+				<p class="help_info">基础信息</p>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media">
+						<img src="{$head|default='__STATIC__/img/logo.png'}" />
+						<div class="mui-media-body">
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$user_info.name|default='请完善'} &nbsp;&nbsp;{$user_info.sex|default='♂'}</span>
+							<p>{$user_info.schoolid|default='请完善'}</p>
+						</div>
+					</div>
+					<div class="mui-card-content" >
+					<div class="mui-card-content-inner">
+						<span class="mui-badge mui-badge-primary">{$user_info.class|default='请完善'}</span>
+						<span class="mui-badge mui-badge-success">{$user_info.major|default='请完善'}</span>
+				        <span class="mui-badge mui-badge-warning">{$user_info.academy|default='请完善'}</span>
+				        <span class="mui-badge mui-badge-danger">{$user_info.phone|default='请完善'}</span>
+				        <span class="mui-badge mui-badge-royal">{$user_info.mail|default='请完善'}</span>
+				        <span class="mui-badge mui-badge-primary">{$user_info.location|default='陕西西安'}</span>
+				        <span class="mui-badge mui-badge-success">{$user_info.nation|default='汉族'}</span>
+				        <span class="mui-badge mui-badge-success">{$user_info.birthyear|default='x'}岁</span>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						{$end_time|default='2017-9-17 18:00:00'}前务必完善后再提交
+						<a class="mui-navigate-right" href="{:url('user/edit_info')}">去完善</a>
+					</div>
+				</div>
+
+				<div class="mui-input-group">
+					<div class="mui-input-row" >
+						<label for="position">我的方向</label>
+						<button type="button" class="mui-btn mui-btn-primary" name="send" id="send"><span style="color: white;" id="button">提交</span></button>
+						<input id='position' type="text" name="position" class="mui-input " placeholder="请选择"   value="{$user_resume.position|default=''}">			
+					</div>             	
+				</div>	
+				<p class="help_info"></p>
+				<div id="slider" class="mui-slider ">
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item" href="#item1mobile">开发类</a>
+						<a class="mui-control-item" href="#item2mobile">研发类</a>
+						<a class="mui-control-item" href="#item3mobile">设计类</a>
+					</div>
+					<div id="item1mobile" class="mui-control-content mui-active">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">前端</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>掌握Html/css/Javascript基础知识，</li>
+										<li>至少熟悉使用一种UI框架，</li>
+										<li>了解一种js库</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>负责Web View中的交互和业务开发</li>
+										<li>随时分享所学心得，培训新同学</li></ol>
+									</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">后端</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>掌握Java/PHP/Python其中一门语言</li>
+										<li>了解MYSQL及SQL语言、编程</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>负责产品服务后台的架构设计、开发、优化及运营</li>
+										<li>随时分享所学心得，培训新同学</li></ol>
+									</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">全栈</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>熟悉以上前后端知识，能够独立开发完整项目</li>
+										<li>悟性高，耐力好</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>负责领导业务开发,撰写开发草案</li>
+										<li>随时分享所学心得，培训新同学</li></ol>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">数据挖掘</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>高数,概率论，线性代数要好，英语阅读能力强
+</li>
+										<li>已经有一定了解并热衷于机器学习前沿方向</li>
+										<li>至少熟练掌握C/C++,Java,Python等一门编程语言</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>短期内以学习为主，利用成熟框架研究人物画像</li>
+										<li>随时分享所学心得</li></ol>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">UI交互</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>了解Web前端跨平台开发技术</li>
+										<li>熟悉体验设计的基本流程，乐于尝试不同的产品
+</li>
+
+										<li>善于学习，有团队协作精神，较强的逻辑分析能力和沟通表达能力。</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>完成交互文档及设计规范，评估竞品案例</li>
+										<li>经常性撰写应用体验报告，开辟推荐专栏</li>
+										<li>随时分享所学心得，培训新同学</li></ol>
+									</p>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">视觉设计</a>
+								<div class="mui-collapse-content">
+									<p>
+										要求：<br>
+										<ol style="font-size: 15px">
+										<li>有一定的设计理论知识和对流行趋势敏锐的洞察力；</li>
+										<li>能够熟练使用Photoshop、Illustrator等软件；
+</li>
+
+										<li>能够快速寻找或设计相应需求</li></ol>
+									</p>
+									<p>	
+										职责：<br>
+										<ol style="font-size: 15px">
+										<li>参与产品前期界面整体视觉风格，完成所需图形，音视频</li>
+										<li>随时分享所学心得，培训新同学</li></ol>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- off-canvas backdrop -->
+		<div class="mui-off-canvas-backdrop"></div>
+	</div>
+<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//普通示例
+					var userPicker = new $.PopPicker({
+						layer: 2
+					});
+					userPicker.setData([{
+						value: '开发类',
+						text: '开发类',
+						children: [{
+							value: "前端",
+							text: "前端"
+						}, {
+							value: "后端",
+							text: "后端"
+						},{
+							value: "全栈",
+							text: "全栈"
+						}]
+					}, {
+						value: '设计类',
+						text: '设计类',
+						children: [{
+							value: "UI交互",
+							text: "UI交互"
+						},{
+							value: "视觉设计",
+							text: "视觉设计"
+						}]
+					},{
+						value: '研发类',
+						text: '研发类',
+						children: [{
+							value: "数据挖掘",
+							text: "数据挖掘"
+						}]
+					},{
+						value: '暂不符合',
+						text: '暂不符合',
+						children: [{
+							value: "继续学习",
+							text: "继续学习"
+						}]
+					}]);
+					
+					var showPickerButton = doc.getElementById('position');
+					showPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							showPickerButton.value =items[0].text + items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+
+		</script> 
+<script type="text/javascript">
+	mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+			})(mui);
+</script>
+<script type="text/javascript">
+			mui.init();
+			document.getElementById("send").addEventListener('tap', function() {
+				var position=document.getElementById("position").value;  
+				var btnArray = ['否', '是'];
+				mui.confirm('确认选择吗','点心网络文化工作室', btnArray, function(e) {
+					if (e.index == 1) {
+						$.ajax({
+							url:"do_resume",
+							data:{'position':position},
+							type:"POST",
+							dataType:"json", 
+						});
+						location='../index/index';
+					} else {
+						
+					}
+				})
+			});
+		</script>
+<!-- 放置资源文件 -->
+{load href="//captcha.luosimao.com/static/js/api.js"/}
+{include file="index/footer" /}
