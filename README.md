@@ -1,5 +1,5 @@
-基于thinkphp开发的点心网络文化工作室网申系统
+基于thinkphp开发的点心网络文化工作室网申系统 [Demo](http://dxstudio.cc)
 
-版权所有Copyright © 2017 by MakerGYT (https://makergyt.com)
+版权所有Copyright © 2017 by [MakerGYT](https://makergyt.com)
 
 All rights reserved。
