@@ -32,8 +32,8 @@ if($act==='reg'){
 		//配置邮件服务器，得到传输对象
 		$transport=Swift_SmtpTransport::newInstance('smtp.qq.com',465,'ssl');
 		//设置登陆帐号和密码
-		$transport->setUsername('admin@mail.gaoyuting.org');
-		$transport->setPassword('enagidesdtqdhhjc');
+		$transport->setUsername('');
+		$transport->setPassword('');
 		//得到发送邮件对象Swift_Mailer对象
 		$mailer=Swift_Mailer::newInstance($transport);
 		//得到邮件信息对象
