@@ -4,7 +4,7 @@
 // Version     : 0.0.1
 // Begin       : 2017-09-1
 // Last Update : 2017-09-10
-// Authors     : MakerGYT admin@mail.gaoyuting.org
+// Authors     : MakerGYT me@makergyt.com
 //-------------------------------------------------------------------
 // License     : MIT (https://mit-license.org/)
 // Copyright (C) 2017 MakerGYT 
@@ -13,9 +13,9 @@ namespace extend\ThinkSDK;
 use think\Exception;
 class Yiban{
 	//应用的APPID
-  	protected $client_id = "bac5b0f7e4c6601e";
+  	protected $client_id = "";
   	//应用的APPKEY
-  	protected $client_secret = "0aa656b0d527a3ef883835e8fea1841b";
+  	protected $client_secret = "";
   	//成功授权后的回调地址
   	protected $redirect_uri = "http://localhost/tp/public/index/user/callback/type/yiban";
 	//获取requestCode的api接口
