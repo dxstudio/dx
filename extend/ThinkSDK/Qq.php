@@ -13,11 +13,11 @@ namespace extend\ThinkSDK;
 use think\Exception;
 class Qq{
 	//应用的APPID
-  	protected $client_id = "101418733";
+  	protected $client_id = "";
   	//应用的APPKEY
-  	protected $client_secret = "462ad1db89d8a0e30caef4719ef95dc8";
+  	protected $client_secret = "";
   	//成功授权后的回调地址
-  	protected $redirect_uri = "http://112.74.41.209/dx/public/index/user/callback/type/qq";
+  	protected $redirect_uri = "http://127.0.0.1/dx/public/index/user/callback/type/qq";
 	//获取requestCode的api接口
 	protected $GetRequestCodeURL = 'https://graph.qq.com/oauth2.0/authorize';
 	//获取access_token的api接口
