@@ -4,9 +4,9 @@ namespace extend\ThinkSDK;
 use think\Exception;
 class Yiban{
 	//应用的APPID
-  	protected $client_id = "7e4fb44f0fbc0468d49b";
+  	protected $client_id = "";
   	//应用的APPKEY
-  	protected $client_secret = "2c96c2320a2b4cc643fe8c50904397698c7270dc";
+  	protected $client_secret = "";
   	//成功授权后的回调地址
   	protected $redirect_uri = "http://localhost/tp/public/index/user/callback/type/yiban";
 	//获取requestCode的api接口
