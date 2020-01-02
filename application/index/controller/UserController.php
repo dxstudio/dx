@@ -270,12 +270,12 @@ class UserController extends BaseController
             } 
         Session::set('code',$code);
         $demo = new SmsDemo(
-            "LTAIOPVY4aC4WyRy",
-            "HxHPdelYOr6FCfrErhjLF21IoOiNpl"
+            "",
+            ""
         );
         $response = $demo->sendSms(
             "点心网络文化工作室", // 短信签名
-            "SMS_90115047", // 短信模板编号
+            "", // 短信模板编号
             $mobile, // 短信接收者
             Array(  // 短信模板中字段的值
                 "number"=>$code,
